@@ -2,10 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="learning the basics of HTML for beginers"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +18,8 @@
     />
     <!-- Our style -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <title>My HW# 1</title>
   </head>
 
@@ -61,251 +61,268 @@
             </li>
           </ul>
         </address>
+        <button class="mob_open_btn" data-menu-open>
+          <svg class="mob_open_icon" width="24" height="24">
+            <use
+              href="./images/symbol-defs.svg#icon-heroicons-solid_menu"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile_menu" data-menu>
+        <div class="container mobile_menu_container">
+          <button class="mob_close_btn" data-menu-close>
+            <svg class="mob_close_icon" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
-    <main>
-      <!-- MAIN CONTENT -->
-      <section class="main-background">
-        <div class="container">
-          <h1 class="main-head">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
-        </div>
-        <!-- =====================about us -->
-      </section>
-      <section class="made">
-        <div class="container elements">
-          <h2 class="visually-hidden">About Us</h2>
-          <ul class="made-menu">
-            <li class="made-menu-item">
-              <div class="made-menu-wrap">
-                <svg class="made-menu-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="made-menu-item-name">Strategy</h3>
-              <p class="made-menu-item-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="made-menu-item">
-              <div class="made-menu-wrap">
-                <svg class="made-menu-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="made-menu-item-name">Punctuality</h3>
-              <p class="made-menu-item-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="made-menu-item">
-              <div class="made-menu-wrap">
-                <svg class="made-menu-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="made-menu-item-name">Diligence</h3>
-              <p class="made-menu-item-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="made-menu-item">
-              <div class="made-menu-wrap">
-                <svg class="made-menu-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="made-menu-item-name">Technologies</h3>
+    <!-- <main> -->
+    <!-- MAIN CONTENT -->
+    <section class="main-background">
+      <div class="container">
+        <h1 class="main-head">Effective Solutions for Your Business</h1>
+        <button type="button" class="button">Order Service</button>
+      </div>
+    </section>
 
-              <p class="made-menu-item-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- team -->
-      <section class="wokers-background">
-        <div class="container">
-          <h2 class="wokers-head">Our Team</h2>
-          <ul class="wokers-menu">
-            <li class="wokers-person">
-              <img
-                src="./images/imagesFaces/img_1_Mark.jpg"
-                alt="Photo1"
-                width="264"
-                height="260"
-              />
-              <div class="wokers-wrap">
-                <h3 class="wokers-names">Mark Guerrero</h3>
-                <p class="wokers-positions">Product Designer</p>
-                <ul class="workers-soc-list">
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="wokers-person">
-              <img
-                src="./images/imagesFaces/img_2_Tom.jpg"
-                alt="Photo2"
-                width="264"
-                height="260"
-              />
-              <div class="wokers-wrap">
-                <h3 class="wokers-names">Tom Ford</h3>
-                <p class="wokers-positions">Frontend Developer</p>
-                <ul class="workers-soc-list">
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="wokers-person">
-              <img
-                src="./images/imagesFaces/img_3_Camila.jpg"
-                alt="Photo3"
-                width="264"
-                height="260"
-              />
-              <div class="wokers-wrap">
-                <h3 class="wokers-names">Camila Garcia</h3>
-                <p class="wokers-positions">Marketing</p>
-                <ul class="workers-soc-list">
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="wokers-person">
-              <img
-                src="./images/imagesFaces/img_4_Daniel.jpg"
-                alt="Photo4"
-                width="264"
-                height="260"
-              />
-              <div class="wokers-wrap">
-                <h3 class="wokers-names">Daniel Wilson</h3>
-                <p class="wokers-positions">UI Designer</p>
-                <ul class="workers-soc-list">
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="workers-soc-item">
-                    <a href="" class="workers-soc-link">
-                      <svg class="workers-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- portfolio -->
-      <section class="our-works">
+    <!-- about us -->
+    <section class="made">
+      <div class="container">
+        <h2 class="visually-hidden">About Us</h2>
+        <ul class="made-menu">
+          <li class="made-menu-item">
+            <div class="made-menu-wrap">
+              <svg class="made-menu-icon" width="64" height="64">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h3 class="made-menu-item-name">Strategy</h3>
+            <p class="made-menu-item-text">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </li>
+          <li class="made-menu-item">
+            <div class="made-menu-wrap">
+              <svg class="made-menu-icon" width="64" height="64">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h3 class="made-menu-item-name">Punctuality</h3>
+            <p class="made-menu-item-text">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li class="made-menu-item">
+            <div class="made-menu-wrap">
+              <svg class="made-menu-icon" width="64" height="64">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="made-menu-item-name">Diligence</h3>
+            <p class="made-menu-item-text">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+          </li>
+          <li class="made-menu-item">
+            <div class="made-menu-wrap">
+              <svg class="made-menu-icon" width="64" height="64">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="made-menu-item-name">Technologies</h3>
+
+            <p class="made-menu-item-text">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- team -->
+    <section class="wokers-background">
+      <div class="container">
+        <h2 class="wokers-head">Our Team</h2>
+        <ul class="wokers-menu">
+          <li class="wokers-person">
+            <img
+              src="./images/imagesFaces/mark_mob_1x.jpg"
+              alt="Photo1"
+              width="264"
+              height="260"
+            />
+            <div class="wokers-wrap">
+              <h3 class="wokers-names">Mark Guerrero</h3>
+              <p class="wokers-positions">Product Designer</p>
+              <ul class="workers-soc-list">
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="wokers-person">
+            <img
+              src="./images/imagesFaces/tom_mob_1x.jpg"
+              alt="Photo2"
+              width="264"
+              height="260"
+            />
+            <div class="wokers-wrap">
+              <h3 class="wokers-names">Tom Ford</h3>
+              <p class="wokers-positions">Frontend Developer</p>
+              <ul class="workers-soc-list">
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="wokers-person">
+            <img
+              src="./images/imagesFaces/camila_mob_1x.jpg"
+              alt="Photo3"
+              width="264"
+              height="260"
+            />
+            <div class="wokers-wrap">
+              <h3 class="wokers-names">Camila Garcia</h3>
+              <p class="wokers-positions">Marketing</p>
+              <ul class="workers-soc-list">
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="wokers-person">
+            <img
+              src="./images/imagesFaces/dan_mob_1x.jpg"
+              alt="Photo4"
+              width="264"
+              height="260"
+            />
+            <div class="wokers-wrap">
+              <h3 class="wokers-names">Daniel Wilson</h3>
+              <p class="wokers-positions">UI Designer</p>
+              <ul class="workers-soc-list">
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="workers-soc-item">
+                  <a href="" class="workers-soc-link">
+                    <svg class="workers-soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- portfolio -->
+    <!-- <section class="our-works">
         <div class="container">
           <h2 class="works-head">Our Portfolio</h2>
           <ul class="works-menu">
@@ -428,9 +445,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- footer -->
-    <footer class="down">
+    <!-- <footer class="down">
       <div class="container footer-container">
         <div class="logo-wrap">
           <a class="logotype logo-footer" href="./index.html"
@@ -495,13 +512,13 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- ................... -->
 
     <!-- ==================modal window -->
     <!-- -----------------------------------backdrop -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button
           class="modal-close-btn"
@@ -610,5 +627,7 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

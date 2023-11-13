@@ -33,12 +33,13 @@ body {
   background-color: #ffffff;
 }
 
-/* ===========components */
+
 .container {
-  width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -57,6 +58,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .page-header {
@@ -72,8 +74,8 @@ body {
 }
 
 .menu {
-  display: flex;
-  gap: 40px;
+  display: none;
+ 
 }
 
 .logotype {
@@ -84,7 +86,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: #4d5ae5;
-  margin-right: 76px;
+padding: 17px 0;
 }
 
 .logo-end {
@@ -103,34 +105,66 @@ body {
 }
 
 .contacts {
+  display: none;
   font-style: normal;
   margin-left: auto;
 }
 
 .contacts-menu {
   display: flex;
-  gap: 40px;
+
 }
 
-.contacts-link {
-  font-size: 16px;
-  padding: 24px 0;
-  display: block;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color var(--timing-function);
+
+.mob_open_btn {
+  padding: 0;
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+.mobile_menu {
+  position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #fff;
+ opacity: 0;
+ visibility: hidden;
+
+
+
+}
+.is-open{
+  opacity: 1;
+  visibility: visible;
+
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: #404bbf;
+.mobile_menu_container {
+  position: relative;
+
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #404bbf;
+.mob_close_btn {
+  position: absolute;
+ top: 24px;
+ right: 24px;
+ padding: 0;
+ line-height: 0;
+ border-radius: 50%;
+ background-color: transparent;
+  border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+
 }
+
+.mob_close_icon {}
+
+
 
 /* MAIN CONTENT */
 /* активація кнопок на зміну курсора при наведенні */
@@ -180,39 +214,47 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/header/people-office.jpg);
+    url(../images/header/Dark_bg_mobile_1x.jpg);
   background-size: cover;
-  padding: 188px 0;
+  padding: 72px 0;
   background-position: center;
   margin: 0 auto;
   background-repeat: no-repeat;
 }
 
 .main-head {
-  max-width: 496px;
+ max-width: 208px;
+ text-transform: capitalize;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   text-align: center;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .main-background {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/header/Dark_bg_mobile_2x.jpg);
+  }
 }
 
 /* about us */
 
 .made-menu {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
-.made-menu-item {
-  width: calc((100% - 3 * 24px) / 4);
-}
+
 
 .made-menu-wrap {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 112px;
@@ -224,30 +266,36 @@ body {
 }
 
 .made-menu-item-name {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+ 
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .made-menu-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: #434455;
 }
 
+
 .made {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 /* team */
 
 .wokers-background {
+  max-width: 424px;
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding:96px 0;
+
 }
 
 .wokers-head {
@@ -262,7 +310,9 @@ body {
 
 .wokers-menu {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
 }
 
 .wokers-names {
@@ -285,9 +335,18 @@ body {
   color: #434455;
 }
 
+
+
+
+
+
+
+
+
+
 .wokers-person {
   background-color: #ffffff;
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -296,6 +355,7 @@ body {
 
 .wokers-wrap {
   padding: 32px 0;
+
 }
 
 .workers-soc-list {
@@ -328,6 +388,8 @@ body {
 .workers-soc-icon {
   fill: #f4f4fd;
 }
+
+
 
 /* portfolio */
 .our-works {
