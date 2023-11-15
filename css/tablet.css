@@ -72,17 +72,65 @@ max-width: 496px;
 }
 
 .wokers-background {
-  max-width: 768px;
+ 
   background-color: #f4f4fd;
-  padding: 96px 108px;}
+}
 .wokers-menu {
 flex-direction: row;
 flex-wrap: wrap;
 gap: 64px 24px;
-}
-.wokers-person{
-  width: calc((100% - 24px) / 2);}
 
+justify-content: center;
+}
+
+.works-menu {
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px; 
+}
+
+.works-item {
+
+width:calc((100% - 24px) / 2);
+}
+
+
+/* footer */
+.down {
+  background-color: #2e2f42;
+  padding: 97px 164px 96px 108px;
+}
+
+.logo-footer {
+  display: inline-flex;
+ justify-content: flex-start;
+}
+
+
+.footer-soc-title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.footer-soc-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+
+
+}
+.subscribe {
+ 
+  align-items:flex-start ;
+
+}
 }
 
 
