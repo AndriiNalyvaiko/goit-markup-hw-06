@@ -83,8 +83,8 @@
 }
 .footer-container {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: unset;
 }
 
 .logo-wrap {
@@ -92,10 +92,15 @@
 }
 
 .subscribe {
- margin-left: 80px;
+ margin-left: auto;
 }
 
-
+.subscribe-form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 16px;
+}
 } 
 
 

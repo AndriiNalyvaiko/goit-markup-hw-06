@@ -472,7 +472,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   padding: 40px 32px;
   transition: transform var(--timing-function);
 }
-
+.card-img{
+  width: 100%;
+}
 /*============================================ footer */
 
 .down {
@@ -495,16 +497,31 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .logo-footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
+
 }
+
+.logotype-footer{
+  font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+}
+
+
 
 .footer-container {
   display: flex;
+  gap: 72px;
   flex-direction: column;
   justify-content: center;
 }
 
 .logo-wrap {
-  margin-bottom: 72px;
+
 }
 
 .footer-soc-title {
@@ -526,7 +543,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
+
 }
 
 .footer-soc-item {
