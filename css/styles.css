@@ -520,9 +520,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   justify-content: center;
 }
 
-.logo-wrap {
-
-}
+.logo-wrap {}
 
 .footer-soc-title {
   display: flex;
@@ -631,9 +629,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   transition: background-color var(--timing-function);
 }
 
-.subscribe-icon {
-  margin-left: 16px;
-}
 
 .subscribe-btn:hover {
   background-color: #404bbf;
@@ -676,7 +671,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 300px;
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -875,7 +870,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   border-radius: 4px;
   background-color: #4d5ae5;
   box-shadow: rgba(0, 0, 0, 0.15);
-  /* Button Text */
+margin: 0 auto;
   min-width: 169px;
   height: 56px;
   border-radius: 4px;

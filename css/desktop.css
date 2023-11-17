@@ -51,12 +51,14 @@
     font-weight: 400;}
 
 
- .wokers-background{
+ .our-works{
 
     padding: 120px 0;
   
 }
-
+.wokers-background{
+    padding: 120px;
+}
 .wokers-person {
   
     width: calc((100% - 72px) / 4);
@@ -85,6 +87,7 @@
     display: flex;
     flex-wrap: nowrap;
     gap: unset;
+    
 }
 
 .logo-wrap {
